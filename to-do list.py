@@ -20,9 +20,9 @@ def main():
                 print("Tugas Ditambahkan!")
 
         elif choice == '2':
-            print("\nTasks:")
+            print("\nDaftar Tugas:")
             for index, task in enumerate(tasks):
-                status = "Done" if task["done"] else "Not Done"
+                status = "Selesai" if task["done"] else "Belum Selesai"
                 print(f"{index + 1}. {task['task']} - {status}")
 
         elif choice == '3':
@@ -38,7 +38,7 @@ def main():
             break
 
         else:
-            print("Invalid choice. Please try again.")
+            print("Pilihan tidak valid. Silakan coba lagi.")
 
 if __name__ == "__main__":
     main()
