@@ -45,10 +45,10 @@ Berikut adalah daftar seluruh kontributor pada proyek ini beserta persentase kon
 
 | Nama Kontributor        | Persentase Kontribusi | Jumlah Kontribusi | Profil GitHub                              | Avatar                                        |
 |------------------------|----------------------|-------------------|--------------------------------------------|-----------------------------------------------|
-| Syphilum               | 71%                  | 22                | [Syphilum](https://github.com/Syphilum)            | ![Syphilum](https://avatars.githubusercontent.com/u/193500420?v=4)     |
-| Yoikss                 | 13%                  | 4                 | [Yoikss](https://github.com/Yoikss)                | ![Yoikss](https://avatars.githubusercontent.com/u/246048604?v=4)       |
-| ferelkimbal026         | 6%                   | 2                 | [ferelkimbal026](https://github.com/ferelkimbal026) | ![ferelkimbal026](https://avatars.githubusercontent.com/u/242188861?v=4)|
-| jiwopes-pixel          | 10%                  | 3                 | [jiwopes-pixel](https://github.com/jiwopes-pixel)  | ![jiwopes-pixel](https://avatars.githubusercontent.com/u/242097269?v=4) |
+| Hidayat               | 71%                  | 22                | [Syphilum](https://github.com/Syphilum)            | ![Syphilum](https://avatars.githubusercontent.com/u/193500420?v=4)     |
+| Indra                 | 13%                  | 4                 | [Yoikss](https://github.com/Yoikss)                | ![Yoikss](https://avatars.githubusercontent.com/u/246048604?v=4)       |
+| ferel         | 6%                   | 2                 | [ferelkimbal026](https://github.com/ferelkimbal026) | ![ferelkimbal026](https://avatars.githubusercontent.com/u/242188861?v=4)|
+| Jimmy          | 10%                  | 3                 | [jiwopes-pixel](https://github.com/jiwopes-pixel)  | ![jiwopes-pixel](https://avatars.githubusercontent.com/u/242097269?v=4) |
 
 > Persentase kontribusi otomatis dihitung dari jumlah kontribusi (commits/PR/issue) berdasarkan data halaman [Insights Contributors](https://github.com/Syphilum/Proyek-Kolaborasi-Python-AF141/graphs/contributors).
 
