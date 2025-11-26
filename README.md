@@ -11,19 +11,11 @@ Selamat datang di **Proyek Kolaborasi Python AF141**. Repo ini merupakan hasil k
 
 ## Deskripsi Proyek
 
-Repositori ini berisi tugas-tugas, latihan, dan proyek mini yang kami selesaikan bersama menggunakan bahasa Python. Tujuan utama proyek ini adalah mengembangkan pemahaman pemrograman dasar dan lanjutan, serta membangun kerja sama tim yang solid.
-
-## Struktur Folder
-
-- `/` : Berisi file utama dan dokumentasi
-- `/src` : Berisi kode program Python yang dikembangkan secara kolaboratif
-- `/docs` : Berisi dokumentasi tambahan atau catatan penting lainnya
-- `/tests` : Berisi skrip untuk pengujian program
+Repositori ini berisi tugas.
 
 ## Persyaratan Sistem
 
 - Python 3.x
-- Library/libraries tambahan (lihat `requirements.txt` jika tersedia)
 
 ## Cara Penggunaan
 
@@ -35,11 +27,7 @@ Repositori ini berisi tugas-tugas, latihan, dan proyek mini yang kami selesaikan
    ```bash
    cd Proyek-Kolaborasi-Python-AF141
    ```
-3. (Opsional) Install dependensi:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Jalankan skrip sesuai petunjuk di masing-masing file atau folder.
+3. Jalankan skrip sesuai petunjuk di masing-masing file atau folder.
 
 ## Kontribusi
 
