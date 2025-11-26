@@ -5,6 +5,8 @@ from PyQt5.QtGui import QPainter, QColor, QFont
 
 from tetris_model import BOARD_DATA, Shape
 from tetris_ai import TETRIS_AI
+from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
+from PyQt5.QtCore import QUrl
 
 TETRIS_AI = None
 
@@ -18,6 +20,7 @@ class Tetris(QMainWindow):
         self.lastShape = Shape.shapeNone
 
         self.initUI()
+        self.initMusic()
 
     def initUI(self):
         self.gridSize = 22
@@ -44,7 +47,18 @@ class Tetris(QMainWindow):
 
         self.setFixedSize(self.tboard.width() + self.sidePanel.width(),
                           self.sidePanel.height() + self.statusbar.height())
+def initMusic(self):
+    self.player = QMediaPlayer()
+    url = QUrl.fromLocalFile("ost_tetris.mp3")  # Ganti dengan path file kamu jika berbeda
+    self.player.setMedia(QMediaContent(url))
+    self.player.setVolume(40)
+    # Agar loop, sambungkan signal ke handler
+    self.player.mediaStatusChanged.connect(self.loopMusic)
 
+def loopMusic(self, status):
+    if status == QMediaPlayer.EndOfMedia:
+        self.player.setPosition(0)
+        self.player.play()
     def center(self):
         screen = QDesktopWidget().screenGeometry()
         size = self.geometry()
@@ -63,6 +77,8 @@ class Tetris(QMainWindow):
 
         BOARD_DATA.createNewPiece()
         self.timer.start(self.speed, self)
+        if self.player.state() != QMediaPlayer.PlayingState:
+            self.player.play()
 
     def pause(self):
         if not self.isStarted or self.isGameOver: 
