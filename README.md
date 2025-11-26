@@ -28,6 +28,10 @@ Repositori ini berisi tugas.
    cd Proyek-Kolaborasi-Python-AF141
    ```
 3. Jalankan skrip sesuai petunjuk di masing-masing file atau folder.
+4. ikuti contoh di bawah ini untuk menjalankan script
+   ```bash
+   python [nama file].py
+   ```
 
 ## Kontribusi
 
