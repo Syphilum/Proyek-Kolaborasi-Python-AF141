@@ -11,11 +11,18 @@ Selamat datang di **Proyek Kolaborasi Python AF141**. Repo ini merupakan hasil k
 
 ## Deskripsi Proyek
 
-Repositori ini berisi tugas.
+Proyek kolaborasi berupa game **TETRIS**
 
-## Persyaratan Sistem
-
-- Python 3.x
+## Requirements
+- [python](https://www.python.org/downloads/release/python-3140/)
+- PyQt5
+  ```bash
+  pip install pyqt5
+  ```
+- NumPy
+  ```bash
+  pip install numpy
+  ```
 
 ## Cara Penggunaan
 
@@ -27,10 +34,9 @@ Repositori ini berisi tugas.
    ```bash
    cd Proyek-Kolaborasi-Python-AF141
    ```
-3. Jalankan skrip sesuai petunjuk di masing-masing file atau folder.
-4. ikuti contoh di bawah ini untuk menjalankan script
+3. jalankan permainan
    ```bash
-   python [nama file].py
+   python tetris_game.py
    ```
 
 ## Kontribusi
