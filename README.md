@@ -39,9 +39,20 @@ Proyek kolaborasi berupa game **TETRIS**
    python tetris_game.py
    ```
 
-## Kontribusi
+## Kontributor
 
-Anggota dapat menambah atau memperbaiki kode melalui branch masing-masing dengan melakukan _pull request_ untuk review bersama.
+Berikut adalah daftar seluruh kontributor pada proyek ini beserta persentase kontribusi dan profil GitHub:
+
+| Nama Kontributor        | Persentase Kontribusi | Jumlah Kontribusi | Profil GitHub                              | Avatar                                        |
+|------------------------|----------------------|-------------------|--------------------------------------------|-----------------------------------------------|
+| Syphilum               | 71%                  | 22                | [Syphilum](https://github.com/Syphilum)            | ![Syphilum](https://avatars.githubusercontent.com/u/193500420?v=4)     |
+| Yoikss                 | 13%                  | 4                 | [Yoikss](https://github.com/Yoikss)                | ![Yoikss](https://avatars.githubusercontent.com/u/246048604?v=4)       |
+| ferelkimbal026         | 6%                   | 2                 | [ferelkimbal026](https://github.com/ferelkimbal026) | ![ferelkimbal026](https://avatars.githubusercontent.com/u/242188861?v=4)|
+| jiwopes-pixel          | 10%                  | 3                 | [jiwopes-pixel](https://github.com/jiwopes-pixel)  | ![jiwopes-pixel](https://avatars.githubusercontent.com/u/242097269?v=4) |
+
+> Persentase kontribusi otomatis dihitung dari jumlah kontribusi (commits/PR/issue) berdasarkan data halaman [Insights Contributors](https://github.com/Syphilum/Proyek-Kolaborasi-Python-AF141/graphs/contributors).
+
+Terima kasih atas kontribusi semua rekan-rekan!
 
 ## Lisensi
 
