@@ -47,18 +47,17 @@ class Tetris(QMainWindow):
 
         self.setFixedSize(self.tboard.width() + self.sidePanel.width(),
                           self.sidePanel.height() + self.statusbar.height())
-def initMusic(self):
-    self.player = QMediaPlayer()
-    url = QUrl.fromLocalFile("ost_tetris.mp3")  # Ganti dengan path file kamu jika berbeda
-    self.player.setMedia(QMediaContent(url))
-    self.player.setVolume(40)
-    # Agar loop, sambungkan signal ke handler
-    self.player.mediaStatusChanged.connect(self.loopMusic)
-
-def loopMusic(self, status):
-    if status == QMediaPlayer.EndOfMedia:
-        self.player.setPosition(0)
-        self.player.play()
+    def initMusic(self):
+         self.player = QMediaPlayer()
+         url = QUrl.fromLocalFile("ost_tetris.mp3")
+         self.player.setMedia(QMediaContent(url))
+         self.player.setVolume(40)
+         self.player.mediaStatusChanged.connect(self.loopMusic)
+    
+    def loopMusic(self, status):
+         if status == QMediaPlayer.EndOfMedia:
+             self.player.setPosition(0)
+             self.player.play()
     def center(self):
         screen = QDesktopWidget().screenGeometry()
         size = self.geometry()
