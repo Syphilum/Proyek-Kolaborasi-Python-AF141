@@ -47,7 +47,7 @@ The gang members:
 |------------------------|----------------------|-------------------|--------------------------------------------|-----------------------------------------------|
 | Hidayat               | 73%                  | 24                | [Syphilum](https://github.com/Syphilum)            | ![Syphilum](https://avatars.githubusercontent.com/u/193500420?v=4)     |
 | Indra                 | 12%                  | 4                 | [Yoikss](https://github.com/Yoikss)                | ![Yoikss](https://avatars.githubusercontent.com/u/246048604?v=4)       |
-| ferel         | 6%                   | 2                 | [ferelkimbal026](https://github.com/ferelkimbal026) | ![ferelkimbal026](https://avatars.githubusercontent.com/u/242188861?v=4)|
+| Ferel         | 6%                   | 2                 | [ferelkimbal026](https://github.com/ferelkimbal026) | ![ferelkimbal026](https://avatars.githubusercontent.com/u/242188861?v=4)|
 | Jimmy          | 9%                  | 3                 | [jiwopes-pixel](https://github.com/jiwopes-pixel)  | ![jiwopes-pixel](https://avatars.githubusercontent.com/u/242097269?v=4) |
 
 > Persentase kontribusi otomatis dihitung dari jumlah kontribusi (commits/PR/issue) berdasarkan data halaman [Insights Contributors](https://github.com/Syphilum/Proyek-Kolaborasi-Python-AF141/graphs/contributors).
