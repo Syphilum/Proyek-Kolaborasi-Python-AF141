@@ -1,0 +1,72 @@
+"""
+Konverter suhu sederhana
+Menjalankan interaktif di terminal:
+    python konverter_suhu.py
+
+Mendukung konversi antar: Celsius (C), Fahrenheit (F), Kelvin (K).
+"""
+
+def c_to_f(c): return c * 9/5 + 32
+def c_to_k(c): return c + 273.15
+
+def f_to_c(f): return (f - 32) * 5/9
+def f_to_k(f): return c_to_k(f_to_c(f))
+
+def k_to_c(k): return k - 273.15
+def k_to_f(k): return c_to_f(k_to_c(k))
+
+def format_num(x): return f"{x:.2f}"
+
+def konversi_dari(unit, value):
+    unit = unit.upper()
+    if unit == "C":
+        return {
+            "C": format_num(value),
+            "F": format_num(c_to_f(value)),
+            "K": format_num(c_to_k(value))
+        }
+    if unit == "F":
+        return {
+            "C": format_num(f_to_c(value)),
+            "F": format_num(value),
+            "K": format_num(f_to_k(value))
+        }
+    if unit == "K":
+        return {
+            "C": format_num(k_to_c(value)),
+            "F": format_num(k_to_f(value)),
+            "K": format_num(value)
+        }
+    raise ValueError("Unit tidak dikenali")
+
+def main():
+    print("=== Konverter Suhu Sederhana ===")
+    print("Format unit: C (Celsius), F (Fahrenheit), K (Kelvin)")
+    while True:
+        raw_unit = input("\nMasukkan unit asal (C/F/K) atau 'q' untuk keluar: ").strip()
+        if raw_unit.lower() == 'q':
+            print("Keluar. Sampai jumpa!")
+            break
+        if raw_unit.upper() not in ("C", "F", "K"):
+            print("Unit tidak valid. Coba lagi.")
+            continue
+
+        raw_value = input("Masukkan nilai suhu: ").strip()
+        try:
+            val = float(raw_value)
+        except ValueError:
+            print("Nilai tidak valid (harus angka). Coba lagi.")
+            continue
+
+        if raw_unit.upper() == "K" and val < 0:
+            print("Nilai Kelvin tidak boleh negatif. Coba lagi.")
+            continue
+
+        hasil = konversi_dari(raw_unit, val)
+        print("\nHasil konversi:")
+        print(f"  Celsius    : {hasil['C']} C")
+        print(f"  Fahrenheit : {hasil['F']} F")
+        print(f"  Kelvin     : {hasil['K']} K")
+
+if __name__ == "__main__":
+    main()
