@@ -19,8 +19,8 @@ class Tetris(QMainWindow):
         self.nextMove = None
         self.lastShape = Shape.shapeNone
 
-        self.initUI()
         self.initMusic()
+        self.initUI()
 
     def initUI(self):
         self.gridSize = 22
