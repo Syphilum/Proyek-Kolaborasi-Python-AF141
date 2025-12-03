@@ -40,8 +40,25 @@ Proyek kolaborasi berupa game **TETRIS**
    ```
 
 ## Flowchart
-
-
+```mermaid
+    flowchart TD
+    Start --> GUI
+    GUI --> InisTetris
+    InisTetris --> Setup
+    Setup --> BeginGame
+    BeginGame --> GameLoop
+    GameLoop --> Input
+    Input --> MoveDown
+    Input --> Restart
+    Restart --> BeginGame
+    MoveDown --> AI
+    AI --> MoveDown
+    AI --> Score
+    Score --> IsGameOver
+    IsGameOver -- Tidak --> GameLoop
+    IsGameOver -- Ya --> EndGame
+    EndGame --> Input
+```
 
 ## Kontributor
 
