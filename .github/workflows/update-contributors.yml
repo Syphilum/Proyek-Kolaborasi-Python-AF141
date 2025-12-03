@@ -1,0 +1,32 @@
+name: Update Contributors Table
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # dijalankan setiap hari jam 00.00 UTC
+  workflow_dispatch:      # bisa manual juga
+
+jobs:
+  update-table:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run contributor update script
+        run: python scripts/update_contributors.py
+
+      - name: Commit and push if README.md changed
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update contributors table automatically"
+          git push
