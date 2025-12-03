@@ -39,6 +39,10 @@ Proyek kolaborasi berupa game **TETRIS**
    python tetris_game.py
    ```
 
+## Flowchart
+
+
+
 ## Kontributor
 
 The gang members:
