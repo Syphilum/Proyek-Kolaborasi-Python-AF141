@@ -2,7 +2,7 @@ name: Update Contributors Table
 
 on:
   schedule:
-    - cron: '0 0 * * *' # dijalankan setiap hari jam 00.00 UTC
+    - cron: '0 12 * * *' # dijalankan setiap hari jam 00.00 UTC
   workflow_dispatch:      # bisa manual juga
 
 jobs:
